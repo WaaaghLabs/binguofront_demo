@@ -1,0 +1,363 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+  background: linear-gradient(90deg, #9672ff 0%, #ffdc9f 50%, #14cda6 100%);
+  font-family: MiSans;
+  position: relative;
+  backdrop-filter: blur(10px);
+}
+.masked {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.5rem;
+}
+
+.header-left {
+  width: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header-right {
+  width: 99px;
+  height: 26px;
+  border-radius: 7px;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  margin-right: 1rem;
+}
+.header-button {
+  background: linear-gradient(90deg, #9672ff 0%, #1a48ff 58%, #31b7ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: HarmonyOS Sans;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 11px;
+  letter-spacing: 0px;
+}
+.header-line {
+  border: 1px solid #e5e7eb;
+  width: 100%;
+}
+
+.image-logo {
+  width: 36.99px;
+  height: 27.33px;
+  opacity: 1;
+}
+.header-text {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 11px;
+  letter-spacing: 0px;
+  color: #1a1a1a;
+}
+
+.trade {
+  margin-top: 80px;
+  width: 396px;
+  /* height: 478px; */
+  border-radius: 28px;
+  opacity: 1;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+.trade-name {
+  font-family: MiSans;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0em;
+  align-self: flex-start;
+  margin-right: 50px;
+  color: rgba(0, 0, 0, 0.88);
+  margin-top: 32px;
+  margin-bottom: 18px;
+}
+
+.trade-money {
+  align-self: flex-start;
+  font-family: HarmonyOS Sans;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0px;
+  color: #6f42f0;
+  margin-bottom: 28px;
+}
+
+.trade-swap-set {
+  display: flex;
+  justify-content: space-between;
+}
+
+.swap-bg {
+  width: 51px;
+  height: 28px;
+  border-radius: 7.2px;
+  opacity: 1;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.swap-text {
+  font-family: HarmonyOS Sans;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #111111;
+}
+.swap-round {
+  width: 28px;
+  height: 28px;
+  border-radius: 20px;
+  opacity: 1;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.set {
+  width: 13px;
+  height: 12px;
+  transform: rotate(29.81deg);
+  opacity: 1;
+}
+
+.trade-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.connect-wallet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 9.999998092651367px;
+  background: #9571ff;
+  /* height: 44px; */
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.connect-text {
+  font-family: HarmonyOS Sans;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0px;
+  /* 文本色/亮色-主要 */
+  color: #ffffff;
+  height: 24px;
+  z-index: 0;
+}
+
+.content-up {
+  display: flex;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 100px;
+  border-radius: 8px;
+  opacity: 1;
+  align-self: stretch;
+  background: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid #e2e2e2;
+  margin-bottom: 4px;
+}
+.content-down {
+  display: flex;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 100px;
+  border-radius: 8px;
+  align-self: stretch;
+  opacity: 1;
+  align-self: stretch;
+  background: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid #e2e2e2;
+  margin-top: 4px;
+}
+
+.swap-img-bg {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 50%; /* 将子组件的顶部定位在父组件的中间 */
+  left: 50%; /* 将子组件的左侧定位在父组件的中间 */
+  transform: translate(-50%, -50%);
+  width: 30.4px;
+  height: 30.4px;
+  opacity: 1;
+  background: #ffffff;
+  box-sizing: border-box;
+  border-radius: 50px;
+  border: 0.8px solid #e2e2e2;
+}
+
+.moeny-toChange {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+.change-detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.package-money {
+  display: flex;
+}
+
+.swap-img {
+  width: 19.2px;
+  height: 19.2px;
+  opacity: 1;
+}
+
+.change-money {
+  font-family: HarmonyOS Sans;
+  font-size: 26px;
+  font-weight: normal;
+  line-height: 26px;
+  letter-spacing: 0px;
+  color: #6b7280;
+}
+
+.token-change-bg {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 34px;
+  border-radius: 2130px;
+  opacity: 1;
+  background: #f5f5f5;
+}
+.token-bg {
+  width: 22px;
+  height: 22px;
+  opacity: 1;
+  border-radius: 20px;
+  background: #627eea;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-left: 8px;
+}
+.token-bechanged-bg {
+  width: 22px;
+  height: 22px;
+  opacity: 1;
+  border-radius: 20px;
+  background: black;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-left: 8px;
+}
+
+.token {
+  width: 65%;
+}
+
+.token-name {
+  font-family: HarmonyOS Sans;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 15px;
+  text-align: right;
+  letter-spacing: 0px;
+  color: rgba(0, 0, 0, 0.88);
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.arrow {
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid #111111;
+  border-left: 1px solid #111111;
+  transform: rotate(225deg);
+  margin-bottom: 3px;
+  margin-right: 13px;
+}
+
+.dollar-0 {
+  font-family: HarmonyOS Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #6b7280;
+  display: flex;
+}
+.dollar-0-blue {
+  font-family: HarmonyOS Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #6f42f0;
+  display: flex;
+}
+.little-number {
+  font-family: HarmonyOS Sans;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0px;
+  color: #6b7280;
+}
+.little-number-blue {
+  font-family: HarmonyOS Sans;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0px;
+  color: #6f42f0;
+}
+
+.package-money {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.package-img {
+  margin-right: 6px;
+  width: 16px;
+  height: 14px;
+}
