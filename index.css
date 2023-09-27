@@ -279,21 +279,32 @@ body {
   align-content: center;
   justify-content: center;
   margin-left: 8px;
+  flex-wrap: wrap;
 }
 .token-bechanged-bg {
+  position: relative;
   width: 22px;
   height: 22px;
   opacity: 1;
+  flex-wrap: wrap;
   border-radius: 20px;
-  background: black;
-  display: flex;
-  align-content: center;
-  justify-content: center;
+  background: white;
+
   margin-left: 8px;
 }
 
 .token {
+  width: 85%;
+  height: 85%;
+}
+.token-eth {
   width: 65%;
+  height: 100%;
+  top: 50%; /* 将子组件的顶部定位在父组件的中间 */
+  left: 50%; /* 将子组件的左侧定位在父组件的中间 */
+  transform: translate(-50%, -50%);
+  left: 50%;
+  position: absolute;
 }
 
 .token-name {
