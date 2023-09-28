@@ -3,7 +3,6 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-
   text-align: center;
   background: linear-gradient(90deg, #9672ff 0%, #ffdc9f 50%, #14cda6 100%);
   font-family: MiSans;
@@ -54,6 +53,9 @@ body {
   font-weight: 500;
   line-height: 11px;
   letter-spacing: 0px;
+}
+.header-right :hover {
+  cursor: not-allowed;
 }
 .header-line {
   border: 1px solid #e5e7eb;
@@ -168,6 +170,7 @@ body {
   /* height: 44px; */
   border-radius: 10px;
   margin-top: 30px;
+  cursor: not-allowed;
 }
 
 .connect-text {

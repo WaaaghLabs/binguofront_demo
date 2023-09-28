@@ -44,6 +44,7 @@ body {
   align-items: center;
   background: #ffffff;
   margin-right: 1rem;
+  cursor: not-allowed;
 }
 .header-button {
   background: linear-gradient(90deg, #9672ff 0%, #1a48ff 58%, #31b7ff 100%);
@@ -191,7 +192,7 @@ body {
   flex-direction: column;
   padding: 20px 24px;
   gap: 16px;
-
+  align-self: stretch;
   /* 外部/中间色/纯白 */
   background: #ffffff;
   box-sizing: border-box;
