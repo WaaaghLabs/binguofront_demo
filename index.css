@@ -27,6 +27,7 @@ body {
 }
 
 .header-left {
+  height: 40px;
   width: 25rem;
   display: flex;
   align-items: center;
@@ -61,10 +62,16 @@ body {
   border: 1px solid #e5e7eb;
   width: 100%;
 }
-
+.logo-bg {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 60px;
+  margin-left: 20px;
+}
 .image-logo {
-  width: 36.99px;
-  height: 27.33px;
+  width: 33px;
+  height: 30px;
   opacity: 1;
 }
 .header-text {
